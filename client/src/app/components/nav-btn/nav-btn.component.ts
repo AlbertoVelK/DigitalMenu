@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-nav-btn',
+  standalone: true,
+  imports: [],
+  templateUrl: './nav-btn.component.html',
+  styleUrl: './nav-btn.component.scss'
+})
+export class NavBtnComponent {
+
+}
