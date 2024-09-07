@@ -1,0 +1,62 @@
+nav{
+    & > div:first-child{
+
+    }
+    .sideBar{
+        top: 0;
+        background-color: gray;
+        position: fixed;
+        height: 100vh;
+        width: 18rem;
+        transition: right .2s;
+        display: flex;
+        flex-direction: column;
+        &.off{
+            right: -18rem;
+        }
+        &.on{
+            right: 0rem;
+        }
+        .sidebarHead{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            & > div{
+                margin-top: 1rem;
+                // margin-left: 1rem;
+                height: 4rem;
+                width: 4rem;
+                background-color: black;
+                border-radius: 10rem;
+            }
+            & > h5{
+                width: max-content;
+                margin: 0;
+            }
+            & > button{
+                border: none;
+                background: none;
+                font-size: x-large;
+                margin: 0 0 1rem 1rem;
+
+            }
+        }
+        .sidebarBody{
+
+        }
+    }
+    .unclick{
+        top: 0;
+        left: 0; 
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #505050, $alpha: 0.4);
+        &.off{                
+            display: none;
+        }
+        &.on{                
+            display: block; 
+        }
+    }
+}

@@ -3,6 +3,10 @@
     <app-search-bar class="search-bar"></app-search-bar>
   </div>
   <div>
-    <app-nav-btn class="nav-btn"></app-nav-btn>
+    <app-nav-btn
+      class="nav-btn"
+      (clickEvent)="receiveBool($event)"
+    ></app-nav-btn>
   </div>
+  <app-nav-bar [nav]="nav" (clickEvent)="receiveBool($event)"></app-nav-bar>
 </header>
